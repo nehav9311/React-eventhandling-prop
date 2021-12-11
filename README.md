@@ -7,3 +7,5 @@ Problem: How to attatch an event listener to the button(stateless component) to 
 Solution: Pass event handler as a property to this stateless component and use the property in the stateless component.
 We have two components "Content" and "Statelessb", "Content" is stateful and "Statelessb" is stateless. Statelessb doesn't have its own onClick event handler, it uses the handler passed down to it by it's parent in a 'this.props.handler' property. 
 Initial counter is set to 0 in the parent(Content), the event handler is also defined in parent. Therefore, child(Statelessb) triggers the event on the parent.
+
+Working code: https://codesandbox.io/s/github/nehav9311/React-eventhandling-prop
